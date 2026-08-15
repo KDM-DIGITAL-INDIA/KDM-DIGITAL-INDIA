@@ -13,3 +13,5 @@ Important: government portals requiring authentication remain external links; PD
 
 
 This COMPLETE build expands the visible catalogue with citizen, government, business, design and printing categories. External government services open their official portals. It intentionally does not copy AK Print Hub's proprietary code, branding, private APIs, payment/agent system, or backend.
+
+FINAL FIX: Removed the top-level jsPDF dependency that caused the complete service catalogue to disappear when a CDN was unavailable. All cards render independently; PDF tools check for their library only when used.
