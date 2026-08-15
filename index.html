@@ -1,58 +1,13 @@
-<!doctype html>
-<html lang="hi">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>KDM DIGITAL INDIA</title>
-<link rel="stylesheet" href="style.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-</head>
-<body>
-<header>
-  <b>KDM <span>DIGITAL INDIA</span></b>
-  <input id="search" placeholder="🔎 Search">
-  <button onclick="window.scrollTo({top:0,behavior:'smooth'})">Home</button>
-</header>
-
-<main>
-<div class="hero"><h1>KDM DIGITAL INDIA</h1><p>Digital tools for Photo • PDF • Resume • ID • QR • Practice</p></div>
-
-<h2>Photo & Image</h2>
-<div class="grid">
-  <div class="card" onclick="photoResize()"><div class="ico">📸</div><b>Photo Resize</b><small>Resize image and download</small></div>
-  <div class="card" onclick="passport()"><div class="ico">🪪</div><b>Passport Photo</b><small>Passport-size photo sheet</small></div>
-  <div class="card" onclick="pngjpg()"><div class="ico">🖼️</div><b>PNG → JPG</b><small>Convert PNG to JPG</small></div>
-  <div class="card" onclick="cropTool()"><div class="ico">✂️</div><b>Crop Photo</b><small>Crop image in browser</small></div>
-</div>
-
-<h2>PDF Tools</h2>
-<div class="grid">
-  <div class="card" onclick="imgpdf()"><div class="ico">📕</div><b>JPG/PNG → PDF</b><small>Create PDF from images</small></div>
-  <div class="card" onclick="mergePDF()"><div class="ico">📚</div><b>Merge PDF</b><small>Merge PDF files</small></div>
-  <div class="card" onclick="pdfjpg()"><div class="ico">🖼️</div><b>PDF → JPG</b><small>Render PDF pages to JPG</small></div>
-  <div class="card" onclick="deletePDFPage()"><div class="ico">🗑️</div><b>Delete PDF Page</b><small>Remove a selected page</small></div>
-</div>
-
-<h2>Documents</h2>
-<div class="grid">
-  <div class="card" onclick="resume()"><div class="ico">📄</div><b>Resume Maker</b><small>Create and print resume</small></div>
-  <div class="card" onclick="biodata()"><div class="ico">💍</div><b>Marriage Biodata</b><small>Create biodata</small></div>
-  <div class="card" onclick="idcard()"><div class="ico">🪪</div><b>ID Card Maker</b><small>Create printable ID card</small></div>
-  <div class="card" onclick="poster()"><div class="ico">🎨</div><b>Poster Maker</b><small>Create printable poster</small></div>
-  <div class="card" onclick="qr()"><div class="ico">💳</div><b>Payment QR</b><small>Generate QR code</small></div>
-</div>
-
-<h2>Practice & Links</h2>
-<div class="grid">
-  <div class="card" onclick="mock()"><div class="ico">📝</div><b>Mock Test</b><small>Practice quiz with score</small></div>
-  <div class="card" onclick="jobs()"><div class="ico">💼</div><b>Government Jobs</b><small>Official recruitment links</small></div>
-  <div class="card" onclick="help()"><div class="ico">📞</div><b>Help & Support</b><small>Contact/help information</small></div>
-</div>
-</main>
-
-<footer>© 2026 KDM DIGITAL INDIA</footer>
-<script src="app.js"></script>
-</body>
-</html>
+<!doctype html><html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>KDM DIGITAL INDIA</title><link rel="stylesheet" href="style.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script></head><body>
+<header><div class="logo">KDM <span>DIGITAL INDIA</span></div><input id="search" placeholder="Search services & tools..."><button onclick="home()">⌂</button></header>
+<main><section class="hero"><h1>KDM DIGITAL INDIA</h1><p>Digital Services • Printing • Government Portals • Online Tools</p></section>
+<div class="quick"><button onclick="go('tools')">Smart Tools</button><button onclick="go('creative')">Creative Studio</button><button onclick="go('cards')">Card Printing</button><button onclick="go('portal')">Portal Services</button><button onclick="go('gov')">Gov Services</button><button onclick="go('business')">Business</button><button onclick="go('design')">Design & Print</button></div>
+<section id="tools"><h2>⚡ Smart Tools & Services</h2><div class="grid" id="toolGrid"></div></section>
+<section id="creative"><h2>🎨 Creative Design Studio</h2><div class="grid" id="creativeGrid"></div></section>
+<section id="cards"><h2>🪪 Card Printing Services</h2><div class="grid" id="cardGrid"></div></section>
+<section id="portal"><h2>🌐 Portal Services</h2><div class="grid" id="portalGrid"></div></section>
+<section id="gov"><h2>🇮🇳 Government & Citizen Services</h2><div class="grid" id="govGrid"></div></section>
+<section id="business"><h2>🏪 Business & Shop Services</h2><div class="grid" id="businessGrid"></div></section>
+<section id="design"><h2>🖌️ Design & Printing</h2><div class="grid" id="designGrid"></div></section>
+<section><h2>➕ More Digital Services</h2><div class="grid" id="moreGrid"></div></section>
+<section class="about"><h2>KDM DIGITAL INDIA — One Stop Digital Solution</h2><p>Photo, PDF, resume, cards, government portals, practice tests and digital services in one place.</p></section></main><footer>© 2026 KDM DIGITAL INDIA • Help & Support • Privacy • Terms</footer><script src="app.js"></script></body></html>
