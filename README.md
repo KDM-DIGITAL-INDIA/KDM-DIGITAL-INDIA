@@ -1,21 +1,17 @@
-# KDM DIGITAL INDIA
+# KDM DIGITAL INDIA FULL
+Upload index.html, style.css and app.js to the GitHub Pages repository.
 
-A mobile-friendly starter website inspired by the category of digital services offered by online print/document platforms.
-
-## Included
-- Government Jobs
-- Mock Test
-- Passport Photo
-- Resume Maker
+Working browser modules:
 - Photo Resize
-- ID Card Print
-- JPG/PNG/PDF tool entries
-- ID Maker, Biodata, Poster, Application, Shop Promotion and Payment QR entries
+- Passport photo sheet
+- PNG to JPG
+- Crop
+- JPG/PNG to PDF
+- PDF to JPG
+- Resume/Biodata/ID/Poster print forms
+- Payment QR generation
+- Mock Test scoring
+- Government Jobs official links
 - Search
-- Responsive mobile layout
 
-## Run
-Open `index.html` in a browser, or upload the whole folder to GitHub Pages.
-
-## Note
-This is an original KDM DIGITAL INDIA interface, not a copy of another site's branding or source code. The starter buttons and file pickers work; advanced document-processing modules need to be implemented/connected individually.
+Important: PDF Merge and Delete Page require a PDF-writing library/server to reliably rewrite PDF files. The UI captures the selected files/page, but those two operations are not falsely advertised as complete.
